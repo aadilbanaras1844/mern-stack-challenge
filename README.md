@@ -1,7 +1,7 @@
 # Mern stack coding challenge
-Backend => NodeJs
-Frontend => ReactJs
-Cache=> Redis
+* Backend => NodeJs
+* Frontend => ReactJs
+* Cache=> Redis
 
 ## Architecture
 Solution is dockerized, docker file added in both frontend & backend code, docker-compose file added to run all at once and at one point.
