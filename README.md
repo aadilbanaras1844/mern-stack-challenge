@@ -24,3 +24,17 @@ Solution is dockerized, docker file added in both frontend & backend code, docke
 * SASS used, no external framework for css, i added custom sass for design
 * application code  is in src folder
 
+## How to use
+### run using docker solution
+* in root directory, run below command, it will build & run everything 
+> docker-compose up
+### run without docker
+> install npm, node, redis-cli
+#### run backend
+* > cd backend-ts
+* > npm i
+* > PORT=3001 npm start
+#### run frontend
+* > frontend
+* > npm i
+* > REACT_APP_API_HOST=http://localhost:3001 npm start
