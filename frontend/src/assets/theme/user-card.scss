@@ -1,0 +1,32 @@
+
+@import './variables.scss';
+
+.user-card{
+    .card-content{
+        display: table;
+    }
+    img{
+        height: 8rem;
+        overflow: hidden;
+        display: table-cell;
+    }
+    .labels{
+        display: table-cell;
+        vertical-align: top;
+        
+        padding: 1rem;
+        p,a{
+            text-transform: capitalize;
+            color: $darkBlack;
+        }
+        p{
+            margin-bottom: 1rem;
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 600;
+        } 
+    }
+    
+}

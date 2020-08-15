@@ -1,0 +1,122 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Tradeling Apis"
+    },
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/api/search": {
+        "post": {
+          "x-swagger-router-controller": "Github Search",
+          "operationId": "github-search",
+          "tags": [
+            "Github"
+          ],
+          "summary": "github search",
+          "parameters": [
+            {
+              "name": "payload",
+              "in": "body",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "searchType": {
+                    "type": "string",
+                    "example": "users"
+                  },
+                  "searchText": {
+                    "type": "string",
+                    "example": "aadil"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "integer",
+                    "example": 200
+                  },
+                  "isSuccess": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "message": {
+                    "type": "string",
+                    "example": "data fetched"
+                  },
+                  "result": {
+                    "type": "array",
+                    "example": [{
+                      "login": "aadilbanaras1844",
+                      "id": 43050168,
+                      "node_id": "MDQ6VXNlcjQzMDUwMTY4",
+                      "avatar_url": "https://avatars1.githubusercontent.com/u/43050168?v=4",
+                      "gravatar_id": "",
+                      "url": "https://api.github.com/users/aadilbanaras1844",
+                      "html_url": "https://github.com/aadilbanaras1844",
+                      "followers_url": "https://api.github.com/users/aadilbanaras1844/followers",
+                      "following_url": "https://api.github.com/users/aadilbanaras1844/following{/other_user}",
+                      "gists_url": "https://api.github.com/users/aadilbanaras1844/gists{/gist_id}",
+                      "starred_url": "https://api.github.com/users/aadilbanaras1844/starred{/owner}{/repo}",
+                      "subscriptions_url": "https://api.github.com/users/aadilbanaras1844/subscriptions",
+                      "organizations_url": "https://api.github.com/users/aadilbanaras1844/orgs",
+                      "repos_url": "https://api.github.com/users/aadilbanaras1844/repos",
+                      "events_url": "https://api.github.com/users/aadilbanaras1844/events{/privacy}",
+                      "received_events_url": "https://api.github.com/users/aadilbanaras1844/received_events",
+                      "type": "User",
+                      "site_admin": false,
+                      "score": 1
+                  }]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/clear-cache": {
+        "post": {
+          "x-swagger-router-controller": "Github Search",
+          "operationId": "clear-cache",
+          "tags": [
+            "Cache"
+          ],
+          "summary": "clear cache redis",
+          "responses": {
+            "200": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "integer",
+                    "example": 200
+                  },
+                  "isSuccess": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "message": {
+                    "type": "string",
+                    "example": "data cleared"
+                  },
+                  "result": {
+                    "type": "string",
+                    "example": "OK"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }

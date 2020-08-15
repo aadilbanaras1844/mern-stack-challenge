@@ -1,0 +1,45 @@
+
+.repository-card{
+    padding: 1rem;
+    height: 9rem;
+    .card-content{
+        display: block;
+    }
+    .name, .fullname{
+        text-align: center;
+    }
+    .description{
+        font-size: 14px;
+        color: #484646;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+    .user-info{
+        float: right    ;
+        margin-top: 1rem;
+        img,p{
+            display: inline-block;
+            vertical-align: top;
+            padding: 0rem 0.3rem;
+        }
+        img{
+            width: 30px;
+            border-radius: 100%;
+        }
+    }
+    .profile{
+        float: left;
+        margin-top: 1rem;
+        a,p{
+            display: inline-block;
+            padding-right: 0.5rem;
+        }
+    }
+    .bottom{
+        display: flow-root;
+    }
+    
+}

@@ -1,0 +1,44 @@
+
+@import './variables.scss';
+
+  
+.app-header{
+    margin: 10rem auto;
+    .search-form-content{
+        margin-left: 6rem;
+        transition: 0.3s all;
+    }
+}
+
+.app-header-animate{
+    transition: 0.3s all;
+}
+
+.search-form{
+    margin-bottom: 0.5rem;
+    .search-icon{
+        display: table-cell;
+        vertical-align: top;
+        img{
+            width: 3rem;
+            padding-right: 1rem;
+        }
+    }
+    .search-labels{
+        display: table-cell;
+        padding: 0px;
+        h3{
+            color: $darkBlack;
+            font-size: 1.25rem;
+        }
+        p{
+            color: $lightGrey;
+            font-size: 1rem;
+        }
+    }
+}
+
+.search-form-content{
+    margin-top: 3rem;
+    transition: 0.3s all;
+}

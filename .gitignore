@@ -1,0 +1,3 @@
+/backend-ts/node_modules/**
+/backend-ts/dist
+/frontend/node_modules/**

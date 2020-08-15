@@ -1,0 +1,12 @@
+.results{
+    margin-top: 2rem;
+    .result-card{
+        width: 100%;
+        display: inline-block;
+        background: #cacaca;
+        min-height: 8rem;
+        border: 1px solid #b9b2b2;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
