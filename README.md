@@ -12,7 +12,7 @@ Solution is dockerized, docker file added in both frontend & backend code, docke
 * redis-server container for redis server
 
 ## Application URLs
-* by default, backend will be on http://localhost:3001, this router containsswagger docs & apis are listed there.
+* by default, backend will be on http://localhost:3001, this router contains swagger docs & apis are listed there.
 * by default, frontend will be on http://localhost:3000, this will have UI for Github search (users, repositories).
 
 ## Nodejs Code Details
